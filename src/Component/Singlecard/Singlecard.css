@@ -1,0 +1,28 @@
+.single-card-container {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(64, 70, 70);
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.single-card-container img {
+    width: 280px;
+    height: 280px;
+}
+
+.card-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-details button {
+    padding: 10px 20px;
+    background-color: rgb(64, 70, 70);
+    color: white;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+}

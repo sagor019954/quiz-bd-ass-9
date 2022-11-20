@@ -6,3 +6,8 @@
     width: 80%;
     margin: 0 auto;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
