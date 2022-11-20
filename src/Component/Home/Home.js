@@ -1,9 +1,18 @@
 import React from 'react';
-
+import { useLoaderData } from 'react-router-dom';
+import Picture from '../img/7520601.png'
+import './Home.css'
 const Home = () => {
+    const cardData = useLoaderData();
+    const { data } = cardData;
     return (
-        <div>
-            <h1>this is home page</h1>
+        <div className='home-container'>
+            <div className='img-section'>
+                <img src={Picture}></img>
+            </div>
+            <div>
+                <p>data length{data.length}</p>
+            </div>
         </div>
     );
 };
