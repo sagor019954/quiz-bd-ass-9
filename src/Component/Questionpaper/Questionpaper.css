@@ -6,4 +6,8 @@
     border-radius: 5px;
 }
 
-.correctionanswer {}
+.questionheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

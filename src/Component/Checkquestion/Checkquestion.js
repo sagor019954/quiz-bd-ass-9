@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Checkquestion = ({ option, correctAnswer }) => {
-    console.log(correctAnswer);
     function checkoption(option) {
         if (option === correctAnswer) {
             alert('answer correct')
@@ -15,7 +14,6 @@ const Checkquestion = ({ option, correctAnswer }) => {
         <div>
             <input onClick={() => checkoption(option)} type="checkbox" />
             <label  >{option}</label>
-
         </div>
     );
 };
