@@ -1,0 +1,7 @@
+.summary {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(188, 188, 224, 0.622);
+}

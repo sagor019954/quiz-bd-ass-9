@@ -32,12 +32,9 @@ function App() {
           }
         },
         {
-          path: '/result',
-          element: <Result></Result>
-        },
-        {
           path: '/answer',
-          element: <Answer></Answer>
+          element: <Answer></Answer>,
+          loader: async () => { return fetch('https://openapi.programming-hero.com/api/quiz') },
         },
         {
           path: '/blog',
