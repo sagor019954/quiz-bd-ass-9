@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Questionpaper from '../Questionpaper/Questionpaper';
 
 const Question = () => {
     const Questiondata = useLoaderData();
@@ -7,7 +8,9 @@ const Question = () => {
     const { questions } = data
     return (
         <div>
-            <h1>this is question paper{questions.length}</h1>
+            {
+                questions.map(question => <Questionpaper key={question.id} singlequestion={question}></Questionpaper>)
+            }
         </div>
     );
 };

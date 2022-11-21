@@ -28,7 +28,6 @@ function App() {
           path: '/home/:homeId',
           element: <Question></Question>,
           loader: async ({ params }) => {
-            console.log(params.homeId);
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.homeId}`)
           }
         },
