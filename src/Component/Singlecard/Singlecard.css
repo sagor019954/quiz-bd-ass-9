@@ -18,7 +18,8 @@
     padding: 10px;
 }
 
-.card-details button {
+.card-details a {
+    text-decoration: none;
     padding: 10px 20px;
     background-color: rgb(64, 70, 70);
     color: white;

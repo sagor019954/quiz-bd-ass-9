@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Singlecard.css'
 const Singlecard = ({ singlecard }) => {
     const { id, logo, name, total } = singlecard;
-    console.log(singlecard);
     return (
         <div className='single-card-container'>
             <img src={logo}></img>
@@ -12,7 +12,7 @@ const Singlecard = ({ singlecard }) => {
                     <small>{total}</small>
                 </div>
                 <div>
-                    <button> Start </button>
+                    <Link to={`home/${id}`}> Start </Link>
                 </div>
             </div>
         </div>

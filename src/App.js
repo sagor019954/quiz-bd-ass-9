@@ -4,6 +4,7 @@ import Answer from './Component/Answer/Answer';
 import Blog from './Component/Blog/Blog';
 import Errorpage from './Component/Errorpage/Errorpage';
 import Home from './Component/Home/Home'
+import Question from './Component/Question/Question';
 import Result from './Component/Result/Result';
 import Roots from './Component/Roots/Roots';
 
@@ -22,6 +23,14 @@ function App() {
         {
           path: '/home',
           element: <Home></Home>,
+        },
+        {
+          path: '/home/:homeId',
+          element: <Question></Question>,
+          loader: async ({ params }) => {
+            console.log(params.homeId);
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.homeId}`)
+          }
         },
         {
           path: '/result',
