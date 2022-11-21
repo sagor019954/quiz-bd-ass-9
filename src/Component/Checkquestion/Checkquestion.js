@@ -1,12 +1,21 @@
 import React from 'react';
 
-const Checkquestion = ({ option }) => {
-    console.log(option);
-    // console.log(correctAnswer);
+const Checkquestion = ({ option, correctAnswer }) => {
+    console.log(correctAnswer);
+    function checkoption(option) {
+        if (option === correctAnswer) {
+            alert('answer correct')
+            return;
+        }
+        else {
+            alert('answer wrong')
+        }
+    }
     return (
         <div>
-            <input type="checkbox" />
-            <label >{option}</label>
+            <input onClick={() => checkoption(option)} type="checkbox" />
+            <label  >{option}</label>
+
         </div>
     );
 };
