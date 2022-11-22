@@ -1,21 +1,21 @@
 .single-card-container {
-    width: 300px;
-    height: 300px;
     background-color: rgb(64, 70, 70);
     border-radius: 5px;
-    margin-left: 50px;
+    margin: 50px;
+    box-shadow: 10px 5px 5px rgb(144, 138, 138);
 }
 
 .single-card-container img {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    height: 100%;
 }
 
 .card-details {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    background-color: white;
+    padding: 0 10px;
 }
 
 .card-details a {

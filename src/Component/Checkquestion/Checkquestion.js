@@ -12,7 +12,7 @@ const Checkquestion = ({ option, correctAnswer }) => {
     }
     return (
         <div>
-            <input onClick={() => checkoption(option)} type="checkbox" />
+            <input value={option} onClick={() => checkoption(option)} type="checkbox" />
             <label  >{option}</label>
         </div>
     );

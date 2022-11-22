@@ -5,10 +5,7 @@ import Blog from './Component/Blog/Blog';
 import Errorpage from './Component/Errorpage/Errorpage';
 import Home from './Component/Home/Home'
 import Question from './Component/Question/Question';
-import Result from './Component/Result/Result';
 import Roots from './Component/Roots/Roots';
-
-
 function App() {
   const route = createBrowserRouter([
     {
